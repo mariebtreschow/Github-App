@@ -4,15 +4,15 @@ block content
 
   .container
     .row
-      .col-xs-3
+      .col-xs-2
         img(class='img-fluid' src=user.avatar_url)
-      .col-xs-9
+      .col-xs-10
         h1= user.name
         h5= user.login
         if user.email
-          h5= user.email
+          h5= "Email address: " + user.email
         if user.company
-          h4= user.company
+          h4= "Compny: " + user.company
 
         if user.location
           h4= "Location: " + user.location
